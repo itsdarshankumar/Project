@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+  <body>
+    <form action="https://formsubmit.co/dem" class="Form">
+      <h1>Personal Details</h1>
+      <br />
+      <input type="radio" name="Title" id="Title" value="Mr." />
+      <label for="Title">Mr.</label>
+      <input type="radio" name="Title" id="Title" value="Mrs." />
+      <label for="Title">Mrs.</label>
+      <input type="radio" name="Title" id="Title" value="Dr." />
+      <label for="Title">Dr.</label>
+      <br />
+      <br />
+      <label for="FirstName" class="glyphicon glyphicon-user">First Name</label>
+      <input
+        type="text"
+        name="First Name"
+        id="FirstName"
+        placeholder="First Name"
+        required
+      />*
+      <br />
+      <br />
+      <br />
+      <label for="MiddleName">Middle Name</label>
+      <input
+        type="text"
+        name="Middle Name"
+        id="MiddleName"
+        placeholder="MiddleName"
+      />
+      <br />
+      <br />
+      <br />
+      <label for="Surname">Surname</label>
+      <input
+        type="text"
+        name="Surname"
+        id="Surname"
+        placeholder="Surname"
+        required
+      />*
+      <br />
+      <br />
+      <br />
+      <label for="Email">Email ID</label>
+      <input
+        type="email"
+        name="Email"
+        id="Email"
+        placeholder="Email"
+        required
+      />*
+      <br />
+      <br />
+      <br />
+      <label for="Phone">Phone Number</label>
+      <input
+        type="tel"
+        name="Phone"
+        id="Phone"
+        placeholder="Phone Number"
+        required
+      />*
+      <br />
+      <br />
+      <br />
+      <label for="DOB">Date of Birth</label>
+      <input type="date" name="DOB" id="DOB" required />*
+      <br />
+      <br />
+      <br />
+      <label for="Social">Social Handles</label>
+      <br />
+      <textarea
+        name="Social Handles"
+        id="Social"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
