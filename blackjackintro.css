@@ -1,0 +1,82 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #959595; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+  background-image: url(./Resources/Blackjack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+button {
+  width: 25%;
+  height: 50px;
+  border-radius: 5%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: larger;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+#up {
+  font-family: "Dongle", sans-serif;
+  font-size: 500%;
+  color: #fffefe;
+  text-align: center;
+}
+#info {
+  color: #fffefe;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#down {
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
