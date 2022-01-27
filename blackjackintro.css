@@ -44,6 +44,7 @@ body {
   background-attachment: fixed;
 }
 button {
+  cursor: pointer;
   width: 25%;
   height: 50px;
   border-radius: 5%;
