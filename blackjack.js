@@ -12,6 +12,7 @@ let c7 = document.getElementById("card7");
 let sumv = document.getElementById("sumview");
 let msage = document.getElementById("message");
 let dssum = 0;
+let money = JSON.parse(localStorage.getItem("blackjcredit"));
 
 let msg = "";
 let success = false;
@@ -152,4 +153,6 @@ function result() {
   }
 }
 //Function to manage credits
-function credit() {}
+function credit() {
+  money *= 1.5;
+}

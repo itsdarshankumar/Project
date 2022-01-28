@@ -24,6 +24,7 @@ input[type="number"] {
   border: 3px solid rgba(255, 217, 0, 0.699);
   margin: 10px auto;
   margin-top: 200px;
+  width: 9%;
 }
 
 input[type="submit"] {
