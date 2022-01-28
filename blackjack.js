@@ -19,6 +19,8 @@ let newCard = 0;
 let n = 2;
 let begin = true;
 let dealerbtn = true;
+let win = 0;
+let lose = 0;
 
 //function to distribute cards
 function getCard() {
@@ -149,3 +151,5 @@ function result() {
     document.getElementById("fail").style.display = "block";
   }
 }
+//Function to manage credits
+function credit() {}

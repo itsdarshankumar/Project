@@ -4,3 +4,4 @@ function savetolocal2() {
     JSON.stringify(document.getElementById("Username").value)
   );
 }
+localStorage.setItem("totalcredit", "12345");

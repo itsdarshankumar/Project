@@ -11,44 +11,34 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./blackjackintro.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <h1 id="up">Hola!! Lets Play Blackjack💰</h1>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <a href="./blackjack.html"><button>Begin the Game👍</button></a>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <form action="./blackjack.html" method="get">
+      <input
+        type="number"
+        id="insertcredits"
+        placeholder="Enter credits to bet"
+        required
+      />
+      <br />
+      <input type="submit" value="BEGIN THE GAME!" onclick="savetolocal()" />
+    </form>
     <div id="info">
       <h2>For Rules, Please Scroll Down👇</h2>
     </div>
+    <br /><br /><br />
     <div id="down"><img src="./Resources/Objective.jpg" alt="Rules" /></div>
   </body>
 </html>

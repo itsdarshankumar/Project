@@ -32,3 +32,10 @@ function play() {
     }
   }
 }
+function update() {
+  let updated =
+    JSON.parse(localStorage.getItem("totalcredit")) +
+    points -
+    JSON.parse(localStorage.getItem("credit"));
+  localStorage.setItem("totalcredit", JSON.stringify(updated));
+}
