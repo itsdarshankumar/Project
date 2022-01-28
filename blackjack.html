@@ -22,28 +22,36 @@
       href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Great+Vibes&family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./blackjack.css" />
   </head>
   <body>
     <script src="./blackjack.js"></script>
+    <a href="./Intro.html" id="temp"
+      ><button id="home"><b>Home</b></button></a
+    >
     <div id="background">
       <img src="./Resources/Blackjack table1.jpg" alt="Blackjack table" />
     </div>
 
-    <a href="./blackjackintro.html" id="temp"
-      ><button style="cursor: pointer">Blackjack Home</button></a
-    >
-    <div id="card1" class="cards">1</div>
-    <div id="card2" class="cards">2</div>
-    <div id="card3" class="cards">3</div>
-    <div id="card4" class="cards">4</div>
-    <div id="card5" class="cards">5</div>
-    <div id="card6" class="cards">6</div>
-    <div id="card7" class="cards">7</div>
-    <div id="sum"></div>
+    <div id="card1" class="cards"></div>
+    <div id="card2" class="cards"></div>
+    <div id="card3" class="cards"></div>
+    <div id="card4" class="cards"></div>
+    <div id="card5" class="cards"></div>
+    <div id="card6" class="cards"></div>
+    <div id="card7" class="cards"></div>
+    <div id="sumview"></div>
     <div id="money"></div>
     <div id="dealersum"></div>
-    <button id="stand">Stand</button>
-    <button id="push">New Card</button>
+    <div id="message"></div>
+    <button id="stand" onclick="dealer()"><b>Stand</b></button>
+    <button id="push" onclick="moreCard()"><b>New Card</b></button>
+    <button id="start" onclick="Start()"><b>Start Game</b></button>
   </body>
 </html>

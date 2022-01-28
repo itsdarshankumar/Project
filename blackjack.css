@@ -12,18 +12,180 @@ body {
   margin: 0;
   background-position: center;
 }
-#temp {
+
+#home {
+  width: 120px;
+  height: 50px;
+  border: 2px solid rgba(207, 176, 1, 0.863);
+  background-color: green;
+  color: white;
+  font-family: "Anton", sans-serif;
   display: block;
   position: absolute;
   top: 15px;
+  left: 25px;
+  cursor: pointer;
 }
 #push {
-  display: block;
-  position: absolute;
-  top: 45px;
+  width: 120px;
+  height: 50px;
+  background-color: green;
+  border: 2px solid rgba(207, 176, 1, 0.863);
+  color: white;
+  font-family: "Anton", sans-serif;
+  margin: 0;
+  position: fixed;
+  bottom: 45px;
+  left: 33%;
+  cursor: pointer;
 }
+
+#start {
+  width: 120px;
+  height: 50px;
+  background-color: green;
+  border: 2px solid rgba(207, 176, 1, 0.863);
+  color: white;
+  font-family: "Anton", sans-serif;
+  position: fixed;
+  left: auto;
+  bottom: 45px;
+  cursor: pointer;
+}
+
 #stand {
-  display: block;
+  width: 120px;
+  height: 50px;
+  background-color: green;
+  border: 2px solid rgba(207, 176, 1, 0.863);
+  color: white;
+  font-family: "Anton", sans-serif;
+  position: fixed;
+  bottom: 45px;
+  right: 33%;
+  cursor: pointer;
+}
+
+#card1 {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 44.9%;
+  text-align: center;
+}
+#card2 {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 50.9%;
+  text-align: center;
+}
+#card3 {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 55.9%;
+  text-align: center;
+}
+#card4 {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 60.9%;
+  text-align: center;
+}
+#card5 {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 40.9%;
+  text-align: center;
+}
+#card6 {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 35.9%;
+  text-align: center;
+}
+
+#card7 {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 30.9%;
+  text-align: center;
+}
+
+#money,
+#sumview,
+#message,
+#dealersum {
+  color: white;
   position: absolute;
-  top: 75px;
+  text-align: center;
+  font-family: "Acme", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+#money {
+  top: 30%;
+  right: 25px;
+}
+
+#sumview {
+  top: 35%;
+  right: 135px;
+  font-size: 40px;
+}
+
+#message {
+  top: 50%;
+  right: 50px;
+}
+
+#dealersum {
+  top: 45%;
+  left: 25px;
+  font-size: 40px;
+}
+
+button {
+  box-shadow: 0 6px 0 var(--primary-dark), 0 5px 15px -4px white;
+  transition: box-shadow 0.2s ease-in-out, margin-top 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+  width: 150px;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.9;
+  outline: 0;
+}
+
+button:active {
+  box-shadow: none;
+  margin-top: 6px;
 }

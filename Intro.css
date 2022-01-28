@@ -1,0 +1,75 @@
+body {
+  background-image: url(./Images/casino-bg.jpg);
+}
+
+h1 {
+  margin: 0 auto;
+  color: whitesmoke;
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#choose {
+  color: rgba(255, 217, 0, 0.8);
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin: 40px auto;
+  text-decoration: underline;
+  display: block;
+}
+
+div {
+  border: 7px solid rgb(214, 213, 213);
+  border-style: double;
+  padding: 20px;
+  display: block;
+  float: left;
+  width: 20vw;
+  color: white;
+  margin-left: 40px;
+  height: 400px;
+}
+
+#Slot {
+  margin-left: 180px;
+  color: white;
+  font-family: Abril Fatface;
+}
+
+#Slot2 {
+  color: rgba(255, 217, 0, 0.8);
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+#Blackjack {
+  font-family: "Anton", sans-serif;
+}
+
+#Blackjack2 {
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+#Roulette {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#Roulette2 {
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+img {
+  border: 1px solid white;
+  width: 300px;
+  height: 200px;
+}
+
+img:hover {
+  opacity: 0.7;
+}
