@@ -67,74 +67,87 @@ body {
 }
 
 #card1 {
-  background-color: red;
+  background-color: #00763a;
   color: white;
   font-weight: bolder;
   width: 25px;
   height: 25px;
   position: fixed;
-  left: 44.9%;
+  left: 49.19%;
+  bottom: 235px;
   text-align: center;
 }
 #card2 {
-  background-color: red;
+  background-color: #00763a;
   color: white;
   font-weight: bolder;
   width: 25px;
   height: 25px;
   position: fixed;
-  left: 50.9%;
+  left: 55.7%;
+  bottom: 238px;
+  transform: rotate(-6.8deg);
   text-align: center;
 }
 #card3 {
-  background-color: red;
+  background-color: #00763a;
   color: white;
   font-weight: bolder;
   width: 25px;
   height: 25px;
   position: fixed;
-  left: 55.9%;
+  left: 62.1%;
+  bottom: 256px;
+  transform: rotate(-15deg);
   text-align: center;
 }
 #card4 {
-  background-color: red;
+  background-color: #00763a;
   color: white;
   font-weight: bolder;
   width: 25px;
   height: 25px;
   position: fixed;
-  left: 60.9%;
+  left: 68.1%;
+  bottom: 285px;
+  transform: rotate(-20deg);
   text-align: center;
 }
 #card5 {
-  background-color: red;
+  background-color: #00763a;
   color: white;
   font-weight: bolder;
   width: 25px;
   height: 25px;
   position: fixed;
-  left: 40.9%;
+  right: 55.7%;
+  bottom: 238px;
+  transform: rotate(6.8deg);
   text-align: center;
 }
 #card6 {
-  background-color: red;
+  background-color: #00763a;
   color: white;
   font-weight: bolder;
   width: 25px;
   height: 25px;
   position: fixed;
-  left: 35.9%;
+  right: 62.1%;
+  bottom: 256px;
+  transform: rotate(15deg);
   text-align: center;
 }
 
 #card7 {
-  background-color: red;
+  background-color: #00763a;
   color: white;
   font-weight: bolder;
   width: 25px;
   height: 25px;
   position: fixed;
-  left: 30.9%;
+  right: 68.1%;
+  bottom: 285px;
+  transform: rotate(20deg);
   text-align: center;
 }
 
@@ -188,4 +201,33 @@ button:focus {
 button:active {
   box-shadow: none;
   margin-top: 6px;
+}
+.alert {
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+  position: fixed;
+  top: 25px;
+}
+#succ {
+  background-color: #04aa6d;
+  display: none;
+}
+#fail {
+  background-color: #f44336;
+  display: none;
+}
+#same {
+  background-color: #2196f3;
+  display: none;
+}
+
+#oncemore,
+#tryagain {
+  background-color: rgb(163, 163, 163);
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  font-weight: bolder;
+  border-color: rgb(4, 22, 12);
 }

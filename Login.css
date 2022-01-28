@@ -1,0 +1,62 @@
+body {
+  background-image: url(./Images/casino-bg.jpg);
+}
+
+h1 {
+  margin: 0 auto;
+  color: whitesmoke;
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  margin-left: 50px;
+  margin-top: 30px;
+  text-shadow: 1px 1px rgba(255, 217, 0, 0.8);
+}
+
+#login {
+  width: 30vw;
+  border: 9px solid rgb(214, 213, 213);
+  border-style: double;
+  margin: 120px auto;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px whitesmoke;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  color: whitesmoke;
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  margin: 0 auto;
+  display: block;
+}
+
+input[type="text"] {
+  border: 2px solid rgba(255, 217, 0, 0.8);
+  margin: 0 31%;
+  height: 30px;
+}
+input[type="submit"] {
+  height: 30px;
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  font-weight: bolder;
+}
+
+#us {
+  display: block;
+  float: right;
+  margin-right: 20px;
+}
+
+a {
+  color: whitesmoke;
+  margin: 5px;
+}
+
+a:hover {
+  color: rgb(214, 213, 213);
+}

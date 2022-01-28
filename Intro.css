@@ -5,18 +5,32 @@ body {
 h1 {
   margin: 0 auto;
   color: whitesmoke;
+  text-shadow: 1px 1px rgba(255, 217, 0, 0.8);
   font-family: "Great Vibes", cursive;
   font-size: 60px;
   margin-left: 50px;
   margin-top: 30px;
 }
 
+span {
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  padding: 10px;
+  display: block;
+  float: right;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
 #choose {
   color: rgba(255, 217, 0, 0.8);
   font-family: "Great Vibes", cursive;
+  text-shadow: 0px 1px rgba(255, 217, 0, 0.8);
   font-size: 30px;
   text-align: center;
-  margin: 40px auto;
+  margin: 25px auto;
   text-decoration: underline;
   display: block;
 }
@@ -30,7 +44,7 @@ div {
   width: 20vw;
   color: white;
   margin-left: 40px;
-  height: 400px;
+  height: 420px;
 }
 
 #Slot {
@@ -59,6 +73,10 @@ div {
     "Lucida Sans", Arial, sans-serif;
 }
 
+p {
+  display: inline;
+}
+
 #Roulette2 {
   text-decoration: underline;
   padding-bottom: 10px;
@@ -68,6 +86,7 @@ img {
   border: 1px solid white;
   width: 300px;
   height: 200px;
+  margin-bottom: 20px;
 }
 
 img:hover {

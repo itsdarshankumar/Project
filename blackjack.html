@@ -31,7 +31,6 @@
     <link rel="stylesheet" href="./blackjack.css" />
   </head>
   <body>
-    <script src="./blackjack.js"></script>
     <a href="./Intro.html" id="temp"
       ><button id="home"><b>Home</b></button></a
     >
@@ -53,5 +52,24 @@
     <button id="stand" onclick="dealer()"><b>Stand</b></button>
     <button id="push" onclick="moreCard()"><b>New Card</b></button>
     <button id="start" onclick="Start()"><b>Start Game</b></button>
+    <div class="alert success" id="succ">
+      <strong>Success!</strong> You Won Hurray!!!🎉🎉🥳🥳
+      <a href="./blackjack.html"
+        ><button id="oncemore">Let's do it again</button></a
+      >
+    </div>
+    <div class="alert failure" id="fail">
+      <strong>Oops!</strong> You Lost to the Dealer😕😔
+      <a href="./blackjack.html"
+        ><button id="tryagain">Wanna try again?</button></a
+      >
+    </div>
+    <div class="alert info" id="same">
+      <strong>LOL!</strong> Dealer got the same as your's😉😁
+      <a href="./blackjack.html"
+        ><button id="tryagain">Wanna try again?</button></a
+      >
+    </div>
+    <script src="./blackjack.js"></script>
   </body>
 </html>
