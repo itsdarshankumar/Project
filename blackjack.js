@@ -141,7 +141,7 @@ function dealer() {
 function result() {
   if (sum <= 21 && sum > dssum) {
     document.getElementById("succ").style.display = "block";
-  } else if (sum <= 21 && sum === dsum) {
+  } else if (sum <= 21 && sum === dssum) {
     document.getElementById("same").style.display = "block";
   } else if (sum <= 21 && dssum > 21) {
     document.getElementById("succ").style.display = "block";
