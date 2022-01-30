@@ -75,87 +75,144 @@ body {
 }
 
 #card1 {
-  background-color: #00763a;
-  color: white;
+  background: -webkit-linear-gradient(
+    top,
+    rgb(123, 136, 4) 0%,
+    rgba(102, 2, 2, 0.685) 50%,
+    rgba(120, 141, 3, 0.918) 100%
+  );
+  color: black;
   font-weight: bolder;
-  width: 25px;
-  height: 25px;
+  border: 1px solid rgba(207, 176, 1, 0.863);
+  border-radius: 7px;
+  width: 53px;
+  height: 44px;
   position: fixed;
-  left: 49.19%;
+  left: 48.25%;
+  top: 61%;
   bottom: 235px;
   text-align: center;
+  padding-top: 30px;
 }
 #card2 {
-  background-color: #00763a;
-  color: white;
+  background: -webkit-linear-gradient(
+    top,
+    rgb(123, 136, 4) 0%,
+    rgba(102, 2, 2, 0.685) 50%,
+    rgba(120, 141, 3, 0.918) 100%
+  );
+  color: black;
+  border: 1px solid rgba(207, 176, 1, 0.863);
+  border-radius: 7px;
+  width: 53px;
+  height: 44px;
+  padding-top: 30px;
   font-weight: bolder;
-  width: 25px;
-  height: 25px;
   position: fixed;
-  left: 55.7%;
-  bottom: 238px;
+  left: 54.75%;
+  bottom: 213px;
   transform: rotate(-6.8deg);
   text-align: center;
 }
 #card3 {
-  background-color: #00763a;
-  color: white;
+  background: -webkit-linear-gradient(
+    top,
+    rgb(123, 136, 4) 0%,
+    rgba(102, 2, 2, 0.685) 50%,
+    rgba(120, 141, 3, 0.918) 100%
+  );
+  color: black;
   font-weight: bolder;
-  width: 25px;
-  height: 25px;
+  border: 1px solid rgba(207, 176, 1, 0.863);
+  border-radius: 7px;
+  padding-top: 30px;
+  width: 53px;
+  height: 44px;
   position: fixed;
-  left: 62.1%;
-  bottom: 256px;
-  transform: rotate(-15deg);
+  left: 61%;
+  bottom: 232px;
+  transform: rotate(-16deg);
   text-align: center;
 }
 #card4 {
-  background-color: #00763a;
-  color: white;
+  background: -webkit-linear-gradient(
+    top,
+    rgb(123, 136, 4) 0%,
+    rgba(102, 2, 2, 0.685) 50%,
+    rgba(120, 141, 3, 0.918) 100%
+  );
+  color: black;
   font-weight: bolder;
-  width: 25px;
-  height: 25px;
+  border: 1px solid rgba(207, 176, 1, 0.863);
+  border-radius: 7px;
+  padding-top: 30px;
+  width: 53px;
+  height: 44px;
   position: fixed;
-  left: 68.1%;
-  bottom: 285px;
-  transform: rotate(-20deg);
+  left: 67%;
+  bottom: 266px;
+  transform: rotate(-24deg);
   text-align: center;
 }
 #card5 {
-  background-color: #00763a;
-  color: white;
+  background: -webkit-linear-gradient(
+    top,
+    rgb(123, 136, 4) 0%,
+    rgba(102, 2, 2, 0.685) 50%,
+    rgba(120, 141, 3, 0.918) 100%
+  );
+  color: black;
   font-weight: bolder;
-  width: 25px;
-  height: 25px;
+  border: 1px solid rgba(207, 176, 1, 0.863);
+  border-radius: 7px;
+  padding-top: 30px;
+  width: 53px;
+  height: 44px;
   position: fixed;
-  right: 55.7%;
-  bottom: 238px;
+  right: 54.65%;
+  bottom: 212px;
   transform: rotate(6.8deg);
   text-align: center;
 }
 #card6 {
-  background-color: #00763a;
-  color: white;
+  background: -webkit-linear-gradient(
+    top,
+    rgb(123, 136, 4) 0%,
+    rgba(102, 2, 2, 0.685) 50%,
+    rgba(120, 141, 3, 0.918) 100%
+  );
+  color: black;
   font-weight: bolder;
-  width: 25px;
-  height: 25px;
+  border: 1px solid rgba(207, 176, 1, 0.863);
+  border-radius: 7px;
+  padding-top: 30px;
+  width: 53px;
+  height: 44px;
   position: fixed;
-  right: 62.1%;
-  bottom: 256px;
+  right: 61%;
+  bottom: 233px;
   transform: rotate(15deg);
   text-align: center;
 }
 
 #card7 {
-  background-color: #00763a;
+  background: -webkit-linear-gradient(
+    top,
+    rgb(123, 136, 4) 0%,
+    rgba(102, 2, 2, 0.685) 50%,
+    rgba(120, 141, 3, 0.918) 100%
+  );
   color: white;
   font-weight: bolder;
-  width: 25px;
-  height: 25px;
+  border: 1px solid rgba(207, 176, 1, 0.863);
+  border-radius: 7px;
+  padding-top: 30px;
+  width: 53px;
+  height: 44px;
   position: fixed;
-  right: 68.1%;
-  bottom: 285px;
-  transform: rotate(20deg);
+  right: 67.1%;
+  bottom: 268px;
+  transform: rotate(24deg);
   text-align: center;
 }
 
@@ -238,17 +295,4 @@ button:active {
   box-sizing: border-box;
   font-weight: bolder;
   border-color: rgb(4, 22, 12);
-}
-#creditview {
-  background-color: green;
-  padding: 5px;
-  box-sizing: border-box;
-  text-align: left;
-  font-size: 18px;
-  color: white;
-  font-family: Dancing Script;
-  font-weight: bolder;
-  position: fixed;
-  top: 40px;
-  right: 100px;
 }

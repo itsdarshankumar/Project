@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roulette</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="roulette.css" />
+    <link rel="shortcut icon" href="./Resources/blackjack favicon.jpg" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="roullete" id="trans">
+        <!-- fill color -->
+        <div class="fill fill_1" id="fill fill_1"></div>
+        <div class="fill fill_2" id="fill fill_2"></div>
+        <div class="fill fill_3" id="fill fill_3"></div>
+        <div class="fill fill_4" id="fill fill_4"></div>
+        <div class="fill fill_5" id="fill fill_5"></div>
+        <div class="fill fill_6" id="fill fill_6"></div>
+        <div class="fill fill_7" id="fill fill_7"></div>
+        <div class="fill fill_8" id="fill fill_8"></div>
+        <div class="fill fill_9" id="fill fill_9"></div>
+        <div class="fill fill_10" id="fill fill_10"></div>
+        <div class="fill fill_11" id="fill fill_11"></div>
+        <div class="fill fill_12" id="fill fill_12"></div>
+        <!-- line -->
+        <div class="line line_1"></div>
+        <div class="line line_2"></div>
+        <div class="line line_3"></div>
+        <div class="line line_4"></div>
+        <div class="line line_5"></div>
+        <div class="line line_6"></div>
+        <!-- content -->
+        <div class="content content_1" id="content content_1">10</div>
+        <div class="content content_2" id="content content_2">75</div>
+        <div class="content content_3" id="content content_3">40</div>
+        <div class="content content_4" id="content content_4">250</div>
+        <div class="content content_5" id="content content_5">120</div>
+        <div class="content content_6" id="content content_6">85</div>
+        <div class="content content_7" id="content content_7">20</div>
+        <div class="content content_8" id="content content_8">90</div>
+        <div class="content content_9" id="content content_9">105</div>
+        <div class="content content_10" id="content content_10">50</div>
+        <div class="content content_11" id="content content_11">150</div>
+        <div class="content content_12" id="content content_12">25</div>
+      </div>
+      <button class="trigger" onclick="onClickTrigger()">SPIN</button>
+    </div>
+    <div><input type="number" id="input"></div>
+    <div id="ribbon"></div>
+    <div class="alert success" id="succ">
+        <strong>Success!</strong> You Won Hurray!!!🎉🎉🥳🥳
+        <a href="./roulette.html"
+          ><button id="oncemore">Let's do it again</button></a
+        >
+      </div>
+      <div class="alert failure" id="fail">
+        <strong>Oops!</strong> You Lost😕😔
+        <a href="./roulette.html"
+          ><button id="tryagain">Wanna try again?</button></a
+        >
+        <audio
+        id="sound1"
+        src="./Resources/Spin The Wheel.mp3"
+        preload="auto"
+      ></audio>
+        <audio
+        id="sound2"
+        src="./Resources/fail-buzzer-04.mp3"
+        preload="auto"
+      ></audio>
+      <audio id="sound3" src="" preload="auto"></audio>
+    <script src="roulette.js"></script>
+  </body>
+</html>

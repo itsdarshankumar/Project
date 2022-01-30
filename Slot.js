@@ -14,13 +14,7 @@ function play() {
     Inner1.textContent = items[result1];
     Inner2.textContent = items[result2];
     Inner3.textContent = items[result3];
-    if (result1 === result2 && result2 === result3) {
-      message.textContent = "You won triple credits!! 🎉";
-      points = 3 * points;
-    } else {
-      message.textContent = "Better luck next time. 😊";
-      points = points - 250;
-    }
+    result();
 
     playbtn.textContent = "PLAY AGAIN";
     credits.textContent = "Credits: " + points;
@@ -38,4 +32,13 @@ function update() {
     points -
     JSON.parse(localStorage.getItem("credit"));
   localStorage.setItem("totalcredit", JSON.stringify(updated));
+}
+function result() {
+  if (result1 === result2 && result2 === result3) {
+    document.getElementById("succ").style.display = "block";
+    points = points * 3;
+  } else {
+    document.getElementById("fail").style.display = "block";
+    point = points - 250;
+  }
 }

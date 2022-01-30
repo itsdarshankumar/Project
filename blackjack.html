@@ -50,8 +50,8 @@
     <div id="dealersum"></div>
     <div id="message"></div>
     <button id="stand" onclick="dealer()"><b>Stand</b></button>
-    <button id="push" onclick="moreCard()"><b>New Card</b></button>
-    <button id="start" onclick="Start()"><b>Start Game</b></button>
+    <button id="push" onclick="moreCard(); white1()"><b>New Card</b></button>
+    <button id="start" onclick="Start(); white()"><b>Start Game</b></button>
     <div class="alert success" id="succ">
       <strong>Success!</strong> You Won Hurray!!!🎉🎉🥳🥳
       <a href="./blackjack.html"
@@ -70,7 +70,17 @@
         ><button id="tryagain">Wanna try again?</button></a
       >
     </div>
-    <div id="creditview">Credits:</div>
+    <audio
+      id="sound1"
+      src="./Resources/Card-flip-sound-effect.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="sound2"
+      src="./Resources/fail-buzzer-04.mp3"
+      preload="auto"
+    ></audio>
+    <audio id="sound3" src="" preload="auto"></audio>
     <script src="./blackjack.js"></script>
   </body>
 </html>

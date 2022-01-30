@@ -12,7 +12,6 @@ let c7 = document.getElementById("card7");
 let sumv = document.getElementById("sumview");
 let msage = document.getElementById("message");
 let dssum = 0;
-let money = JSON.parse(localStorage.getItem("blackjcredit"));
 
 let msg = "";
 let success = false;
@@ -20,9 +19,8 @@ let newCard = 0;
 let n = 2;
 let begin = true;
 let dealerbtn = true;
-let win = 0;
-let lose = 0;
-
+let show = true;
+let firstrslt = 0;
 //function to distribute cards
 function getCard() {
   let randomCard = Math.floor(Math.random() * 13) + 1;
@@ -44,13 +42,14 @@ function getCard() {
 function Start() {
   if (begin) {
     document.getElementById("start").textContent = "Game is ON";
+
     active = true;
     cards[0] = getCard();
     cards[1] = getCard();
     sum = cards[0] + cards[1];
+    begin = false;
     predefinedcards();
     continueGame();
-    begin = false;
   }
 }
 //fucntion for gameprogress
@@ -64,8 +63,10 @@ function continueGame() {
   } else if (sum === 21) {
     msg = "You hit a Blackjack!!!";
     success = true;
-    active = true;
-    dealer();
+    blackjack();
+    if (cards[0] + cards[1] != 21) {
+      dealer();
+    }
   } else {
     msg = "You went over 21,tough luck! ";
     active = false;
@@ -85,37 +86,39 @@ function moreCard() {
 }
 //Function to show data of each cards
 function information() {
+  document.getElementById("sound1").play();
   if (n === 3) {
-    card5.textContent = cards[2];
+    c5.textContent = cards[2];
   }
   if (n === 4) {
-    card3.textContent = cards[3];
+    c3.textContent = cards[3];
   }
   if (n === 5) {
-    card6.textContent = cards[4];
+    c6.textContent = cards[4];
   }
   if (n === 6) {
-    card4.textContent = cards[5];
+    c4.textContent = cards[5];
   }
   if (n === 7) {
-    card7.textContent = cards[6];
+    c7.textContent = cards[6];
   }
 }
 
 //Function to show data of first 2 cards
 function predefinedcards() {
-  card1.textContent = cards[0];
-  card2.textContent = cards[1];
+  document.getElementById("sound1").play();
+  c1.textContent = cards[0];
+  c2.textContent = cards[1];
 }
 //dealer function definition
 function dealer1() {
-  if (active === true) {
+  if (active === true || firstrslt === 1) {
     dssum = Math.floor(Math.random() * 5 + 17);
     dealersum.textContent = "Dealer's Sum: " + dssum;
   }
 }
 function dealer2() {
-  if (active === true) {
+  if (active === true || firstrslt === 1) {
     dssum = Math.floor(Math.random() * 9 + 22);
     dealersum.textContent = "Dealer's Sum: " + dssum;
   }
@@ -144,15 +147,86 @@ function dealer() {
 function result() {
   if (sum <= 21 && sum > dssum) {
     document.getElementById("succ").style.display = "block";
+    document.getElementById("sound3").play();
   } else if (sum <= 21 && sum === dssum) {
     document.getElementById("same").style.display = "block";
+    document.getElementById("sound2").play();
   } else if (sum <= 21 && dssum > 21) {
     document.getElementById("succ").style.display = "block";
+    document.getElementById("sound3").play();
   } else {
     document.getElementById("fail").style.display = "block";
+    document.getElementById("sound2").play();
   }
 }
-//Function to manage credits
-function credit() {
-  money *= 1.5;
+
+let m = 1;
+function white() {
+  card1.style.background = "none";
+  card2.style.background = "none";
+  card1.style.backgroundColor = "whitesmoke";
+  card2.style.backgroundColor = "whitesmoke";
+  m++;
+}
+
+function white1() {
+  if (active === true && success === false && dealerbtn === true) {
+    white();
+    if (m === 3) {
+      card5.style.background = "none";
+      card5.style.backgroundColor = "whitesmoke";
+    }
+    if (m === 4) {
+      card3.style.background = "none";
+      card3.style.backgroundColor = "whitesmoke";
+    }
+    if (m === 5) {
+      card6.style.background = "none";
+      card6.style.backgroundColor = "whitesmoke";
+    }
+    if (m === 6) {
+      card4.style.background = "none";
+      card4.style.backgroundColor = "whitesmoke";
+    }
+    if (m === 7) {
+      card7.style.background = "none";
+      card7.style.backgroundColor = "whitesmoke";
+    }
+  } else if (
+    sum >= 21 &&
+    (active === false || success === true) &&
+    show === true
+  ) {
+    white();
+    show = false;
+    if (m === 3) {
+      card5.style.background = "none";
+      card5.style.backgroundColor = "whitesmoke";
+    }
+    if (m === 4) {
+      card3.style.background = "none";
+      card3.style.backgroundColor = "whitesmoke";
+    }
+    if (m === 5) {
+      card6.style.background = "none";
+      card6.style.backgroundColor = "whitesmoke";
+    }
+    if (m === 6) {
+      card4.style.background = "none";
+      card4.style.backgroundColor = "whitesmoke";
+    }
+    if (m === 7) {
+      card7.style.background = "none";
+      card7.style.backgroundColor = "whitesmoke";
+    }
+  }
+}
+
+function blackjack() {
+  if (cards[0] + cards[1] === 21) {
+    active = false;
+    show = false;
+    dealer();
+    firstrslt = 1;
+  }
 }
