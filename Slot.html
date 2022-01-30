@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Slot Machine</title>
-    <link rel="stylesheet" href="./Slot.css" />
+    <link rel="stylesheet" href="./Resources/Slot.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,14 +21,12 @@
     />
     <link
       rel="shortcut icon"
-      href="./Resources/blackjack favicon.jpg"
+      href="./Resources/Images/favicon.jpg"
       type="image/x-icon"
     />
   </head>
   <body>
-    <button id="homebtn" onclick=" location.href='./Intro.html';update()">
-      HOME
-    </button>
+    <button id="homebtn" onclick=" location.href='./Intro.html'">HOME</button>
     <h3><em>Try your luck on...</em></h3>
 
     <h1><b>THE SLOT MACHINE</b></h1>
@@ -43,12 +41,24 @@
       <div id="Inner3">?</div>
     </div>
 
-    <button id="playbtn" onclick="play()"><b>PLAY</b></button>
-    <div class="alert success" id="succ"><strong>Jackpot!</strong>🎉🎉🥳🥳</div>
-    <div class="alert failure" id="fail">
-      <strong>Oops!</strong>So Close,Yet So Far Away!
-    </div>
+    <button id="playbtn" onclick="master()"><b>PLAY</b></button>
 
-    <script src="./Slot.js"></script>
+    <audio
+      id="sound1"
+      src="./Resources/Sounds/slot2.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="sound2"
+      src="./Resources/Sounds/fail-buzzer-04.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="sound3"
+      src="./Resources/Sounds/Success sound effect.mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="./Resources/Slot.js"></script>
   </body>
 </html>

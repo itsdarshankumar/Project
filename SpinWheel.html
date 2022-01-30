@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Roulette</title>
+    <title>Spin Wheel</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="roulette.css" />
-    <link rel="shortcut icon" href="./Resources/blackjack favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./Resources/SpinWheel.css" />
+    <link rel="shortcut icon" href="./Images/favicon.jpg" type="image/x-icon">
   </head>
 
   <body>
@@ -46,30 +46,38 @@
       </div>
       <button class="trigger" onclick="onClickTrigger()">SPIN</button>
     </div>
-    <div><input type="number" id="input"></div>
+       <input
+        type="number"
+        id="input"
+        placeholder="Let's bet on..."
+        required
+      />
+
+      <button id="Home" onclick=" location.href='./Intro.html'"><b>HOME</b></button>
+
     <div id="ribbon"></div>
     <div class="alert success" id="succ">
         <strong>Success!</strong> You Won Hurray!!!🎉🎉🥳🥳
-        <a href="./roulette.html"
+        <a href="./SpinWheel.html"
           ><button id="oncemore">Let's do it again</button></a
         >
       </div>
       <div class="alert failure" id="fail">
         <strong>Oops!</strong> You Lost😕😔
-        <a href="./roulette.html"
+        <a href="./SpinWheel.html"
           ><button id="tryagain">Wanna try again?</button></a
         >
         <audio
         id="sound1"
-        src="./Resources/Spin The Wheel.mp3"
+        src="./Resources/Sounds/Spin The Wheel.mp3"
         preload="auto"
       ></audio>
         <audio
         id="sound2"
-        src="./Resources/fail-buzzer-04.mp3"
+        src="./Resources/Sounds/fail-buzzer-04.mp3"
         preload="auto"
       ></audio>
-      <audio id="sound3" src="" preload="auto"></audio>
-    <script src="roulette.js"></script>
+      <audio id="sound3" src="./Resources/Sounds/Success sound effect.mp3" preload="auto"></audio>
+    <script src="Resources/SpinWheel.js"></script>
   </body>
 </html>

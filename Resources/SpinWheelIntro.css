@@ -1,0 +1,61 @@
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  background-image: url(./Images/spinIntro-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+h2 {
+  font-size: xx-large;
+  margin-top: 25px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: x-large;
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Bangers", cursive;
+  font-size: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  text-shadow: 1px 0 gold;
+}
+
+h2::first-letter {
+  font-size: 50px;
+}
+
+input[type="number"] {
+  margin: 0 auto;
+  display: block;
+  height: 30px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  width: 120px;
+  font-weight: bolder;
+  font-size: 15px;
+}

@@ -7,7 +7,7 @@
     <title>Blackjack</title>
     <link
       rel="shortcut icon"
-      href="./Resources/blackjack favicon.jpg"
+      href="./Resources/Images/favicon.jpg"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,14 +28,17 @@
       href="https://fonts.googleapis.com/css2?family=Acme&family=Great+Vibes&family=Sedgwick+Ave&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./blackjack.css" />
+    <link rel="stylesheet" href="./Resources/blackjack.css" />
   </head>
   <body>
     <a href="./Intro.html" id="temp"
       ><button id="home"><b>Home</b></button></a
     >
     <div id="background">
-      <img src="./Resources/Blackjack table1.jpg" alt="Blackjack table" />
+      <img
+        src="./Resources/Images/Blackjack table1.jpg"
+        alt="Blackjack table"
+      />
     </div>
 
     <div id="card1" class="cards"></div>
@@ -72,15 +75,19 @@
     </div>
     <audio
       id="sound1"
-      src="./Resources/Card-flip-sound-effect.mp3"
+      src="./Resources/Sounds/Card-flip-sound-effect.mp3"
       preload="auto"
     ></audio>
     <audio
       id="sound2"
-      src="./Resources/fail-buzzer-04.mp3"
+      src="./Resources/Sounds/fail-buzzer-04.mp3"
       preload="auto"
     ></audio>
-    <audio id="sound3" src="" preload="auto"></audio>
-    <script src="./blackjack.js"></script>
+    <audio
+      id="sound3"
+      src="./Resources/Sounds/Success sound effect.mp3"
+      preload="auto"
+    ></audio>
+    <script src="./Resources/blackjack.js"></script>
   </body>
 </html>

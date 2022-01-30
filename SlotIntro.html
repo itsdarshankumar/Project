@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Slot Machine</title>
-    <link rel="stylesheet" href="./SlotIntro.css" />
+    <link rel="stylesheet" href="./Resources/SlotIntro.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,29 +21,30 @@
     />
     <link
       rel="shortcut icon"
-      href="./Resources/blackjack favicon.jpg"
+      href="./Resources/Images/favicon.jpg"
       type="image/x-icon"
     />
   </head>
   <body>
-    <script src="./slotintro.js"></script>
+    <script src="./Resources/SlotIntro.js"></script>
     <br /><br /><br />
     <h2>Bonjour! Feeling lucky today? 😊</h2>
     <h3 id="Centre">Presenting...</h3>
     <h1><b>THE SLOT MACHINE</b></h1>
     <br /><br />
-    <form action="./Slot.html" method="get">
+    <form action="./slot.html" method="get">
       <input
         type="number"
         id="insertcredits"
         placeholder="Enter credits to bet"
         required
-        min="1000"
-        max="12345"
       /><br />
       <input type="submit" value="BEGIN!" onclick="savetolocal()" />
     </form>
     <h3 id="End">Confused? Scroll on. 😉</h3>
-    <img src="" alt="" />
+    <br /><br /><br />
+    <div id="obj">
+      <img src="./Resources/Images/slot-obj.png" alt="Objectives" />
+    </div>
   </body>
 </html>

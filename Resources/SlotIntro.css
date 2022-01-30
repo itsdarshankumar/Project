@@ -60,7 +60,6 @@ input[type="number"] {
   margin: 0 auto;
   border: 3px solid rgba(255, 217, 0, 0.699);
   color: rgb(129, 2, 2);
-  width: 9%;
 }
 
 input[type="submit"] {
@@ -75,4 +74,18 @@ input[type="submit"] {
   font-size: 18px;
   letter-spacing: 3px;
   font-family: Abril Fatface;
+}
+
+#obj {
+  min-height: 100vh;
+  margin: 0;
+  margin-top: 50px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
