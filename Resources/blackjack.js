@@ -25,7 +25,7 @@ let firstrslt = 0;
 function getCard() {
   let randomCard = Math.floor(Math.random() * 13) + 1;
   if (randomCard === 1) {
-    if (sum + 11 > 21 || (cards[0]+11>21)) {
+    if (sum + 11 > 21 || cards[0] + 11 > 21) {
       return 1;
     } else {
       return 11;
@@ -89,18 +89,28 @@ function information() {
   document.getElementById("sound1").play();
   if (n === 3) {
     c5.textContent = cards[2];
+    card5.style.background = "none";
+    card5.style.backgroundColor = "whitesmoke";
   }
   if (n === 4) {
     c3.textContent = cards[3];
+    card3.style.background = "none";
+    card3.style.backgroundColor = "whitesmoke";
   }
   if (n === 5) {
     c6.textContent = cards[4];
+    card6.style.background = "none";
+    card6.style.backgroundColor = "whitesmoke";
   }
   if (n === 6) {
     c4.textContent = cards[5];
+    card4.style.background = "none";
+    card4.style.backgroundColor = "whitesmoke";
   }
   if (n === 7) {
     c7.textContent = cards[6];
+    card7.style.background = "none";
+    card7.style.backgroundColor = "whitesmoke";
   }
 }
 
@@ -108,7 +118,11 @@ function information() {
 function predefinedcards() {
   document.getElementById("sound1").play();
   c1.textContent = cards[0];
+  card1.style.background = "none";
+  card1.style.backgroundColor = "whitesmoke";
   c2.textContent = cards[1];
+  card2.style.background = "none";
+  card2.style.backgroundColor = "whitesmoke";
 }
 //dealer function definition
 function dealer1() {
@@ -160,73 +174,11 @@ function result() {
   }
 }
 
-let m = 1;
-function white() {
-  card1.style.background = "none";
-  card2.style.background = "none";
-  card1.style.backgroundColor = "whitesmoke";
-  card2.style.backgroundColor = "whitesmoke";
-  m++;
-}
-
-function white1() {
-  if (active === true && success === false && dealerbtn === true) {
-    white();
-    if (m === 3) {
-      card5.style.background = "none";
-      card5.style.backgroundColor = "whitesmoke";
-    }
-    if (m === 4) {
-      card3.style.background = "none";
-      card3.style.backgroundColor = "whitesmoke";
-    }
-    if (m === 5) {
-      card6.style.background = "none";
-      card6.style.backgroundColor = "whitesmoke";
-    }
-    if (m === 6) {
-      card4.style.background = "none";
-      card4.style.backgroundColor = "whitesmoke";
-    }
-    if (m === 7) {
-      card7.style.background = "none";
-      card7.style.backgroundColor = "whitesmoke";
-    }
-  } else if (
-    sum >= 21 &&
-    (active === false || success === true) &&
-    show === true
-  ) {
-    white();
-    show = false;
-    if (m === 3) {
-      card5.style.background = "none";
-      card5.style.backgroundColor = "whitesmoke";
-    }
-    if (m === 4) {
-      card3.style.background = "none";
-      card3.style.backgroundColor = "whitesmoke";
-    }
-    if (m === 5) {
-      card6.style.background = "none";
-      card6.style.backgroundColor = "whitesmoke";
-    }
-    if (m === 6) {
-      card4.style.background = "none";
-      card4.style.backgroundColor = "whitesmoke";
-    }
-    if (m === 7) {
-      card7.style.background = "none";
-      card7.style.backgroundColor = "whitesmoke";
-    }
-  }
-}
-
 function blackjack() {
   if (cards[0] + cards[1] === 21) {
     active = false;
     show = false;
-    dealer();
     firstrslt = 1;
+    dealer();
   }
 }
