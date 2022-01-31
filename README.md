@@ -18,7 +18,7 @@ This is the repository for our submission for the GLOBAL GAME JAM 2022
 
   ###  2. Blackjack
   This Blackjack program was also built using HTML5, CSS and JavaScript.  
-  We tried to make this program as sser-friendly and interactive as possible  
+  We tried to make this program as user-friendly and interactive as possible  
 
   ### 3. Spin the Wheel
   This is just the classic casino modelled Spin the Wheel  
