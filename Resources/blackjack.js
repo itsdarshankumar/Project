@@ -25,7 +25,7 @@ let firstrslt = 0;
 function getCard() {
   let randomCard = Math.floor(Math.random() * 13) + 1;
   if (randomCard === 1) {
-    if (sum + 11 > 21) {
+    if (sum + 11 > 21 || (cards[0]+11>21)) {
       return 1;
     } else {
       return 11;
